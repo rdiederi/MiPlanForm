@@ -1,5 +1,7 @@
+from datetime import datetime
 import json
 import os
+# import time
 
 
 def write_json(data, filename='details.json'):
@@ -35,6 +37,7 @@ def dataCreation(option):
             'last_name': last_name,
             'birth_date': birth_date,
             'email': email
-        }
+        },
+        'created_at': str(datetime. now())
     }
     return details

@@ -20,7 +20,7 @@ while 1:
         print("Back:            0")
         option_2 = input('>>')
         os.system('clear')
-        if option_2 == '1' or option_2 == '2' or option_2 == '3':
+        if '1' <= option_2 and option_2 <= '3':
             get_option(option_2)
     elif option == '2':
         print("What would you like to see?")

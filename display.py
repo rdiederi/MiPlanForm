@@ -10,10 +10,14 @@ def displayData(option):
             if d['type'] != opt[option - 1]:
                 if option != 4:
                     continue
-            print('*'*60)
+            print('-'*40)
             print('Type: ' + d['type'])
             print('First Name: ' + d['details']['first_name'])
             print('Last Name: ' + d['details']['last_name'])
             print('Birth Date: ' + d['details']['birth_date'])
             print('Email: ' + d['details']['email'])
-            print('*'*60)
+            print('Created At: ' + d['created_at'])
+            print('-'*40)
+        print('*'*40)
+        print('\n')
+    return 0
